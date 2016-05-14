@@ -2,7 +2,7 @@ const FileStorage = require('./storage/FileStorage'),
       EmailStorage = require('./storage/EmailStorage');
 
 class PdfManager {
-  constructor(storage = 'file') {
+  constructor(storage) {
     switch(storage) {
       case 'file':
         this.storage = new FileStorage();
@@ -10,6 +10,8 @@ class PdfManager {
       case 'email':
         this.storage = new EmailStorage();
         break;
+      default:
+        throw Error('Set correct storage');
     }
   }
   getPdfs() {

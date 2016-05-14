@@ -24,15 +24,15 @@ describe('PdfManager', function() {
     mockFs({
       [pdfsPath]: _.zipObject(pdfFiles, pdfFiles)
     });
-    pdfManager = new PdfManager();
-    
+    pdfManager = new PdfManager('file');
+
   });
 
   it('should be instance of PdfManager', function() {
     pdfManager.should.be.an.instanceOf(PdfManager);
   });
 
-  describe('getPdfs', function() {
+  describe('getPdfs method', function() {
     it('should return Promise', function() {
       pdfManager.getPdfs().should.be.an.instanceOf(Promise);
     });
