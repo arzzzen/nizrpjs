@@ -1,7 +1,7 @@
 'use strict';
 
 const chai = require('chai'),
-      chaiAsPromised = require("chai-as-promised"),
+      chaiAsPromised = require('chai-as-promised'),
       AbstractInquirer = require('src/manager/InquirerManager/inquirer/AbstractInquirer'),
       kafedrasCollection = require('src/collection/KafedrasCollection'),
       bddStdin = require('bdd-stdin');

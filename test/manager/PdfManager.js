@@ -4,7 +4,7 @@ const chai = require('chai'),
       mockFs = require('mock-fs'),
       config = require('config'),
       _ = require('lodash'),
-      chaiAsPromised = require("chai-as-promised");
+      chaiAsPromised = require('chai-as-promised');
 
 chai.use(chaiAsPromised);
 chai.should();
@@ -25,7 +25,6 @@ describe('PdfManager', function() {
       [pdfsPath]: _.zipObject(pdfFiles, pdfFiles)
     });
     pdfManager = new PdfManager('file');
-
   });
 
   it('should be instance of PdfManager', function() {

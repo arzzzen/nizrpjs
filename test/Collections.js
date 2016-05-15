@@ -1,7 +1,7 @@
 'use strict';
 
 const chai = require('chai'),
-      chaiAsPromised = require("chai-as-promised"),
+      chaiAsPromised = require('chai-as-promised'),
       Backbone = require('backbone'),
       config = require('config');
 
